@@ -260,7 +260,7 @@ jobs:
              (steps.grass-desktop-version-check.outputs.grass_desktop_build == 'true' && env.force_build != 'true'))
         run: |
           git config --global user.name 'GitHub Actions'
-          git config --global user.email 'mrcolorr@users.noreply.github.com'
+          git config --global user.email 'qnistar@users.noreply.github.com'
 
           # If Grass version changed (not forced)
           if [ "${{ steps.grass-version-check.outputs.grass_build }}" == "true" ] && [ "${{ env.force_build }}" != "true" ]; then
