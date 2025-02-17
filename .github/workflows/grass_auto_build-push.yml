@@ -16,9 +16,9 @@ permissions: # The permissions that the workflow has. The permissions are inheri
   contents: write
 
 env: 
-  GRASS_IMAGE_NAME: 'mrcolorrain/grass'
-  GRASS_NODE_IMAGE_NAME: 'mrcolorrain/grass-node'
-  GRASS_DESKTOP_IMAGE_NAME: 'mrcolorrain/grass-desktop'
+  GRASS_IMAGE_NAME: 'qnistar/grass'
+  GRASS_NODE_IMAGE_NAME: 'qnistar/grass-node'
+  GRASS_DESKTOP_IMAGE_NAME: 'qnistar/grass-desktop'
   TAG: 'latest'
   MAX_DELAY: 30
   GRASS_VERSION_FILE_PATH: '.githubworkflows.grass_current_version'
