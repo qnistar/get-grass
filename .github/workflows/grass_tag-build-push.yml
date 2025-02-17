@@ -1,5 +1,5 @@
 
-/*
+
 name: Grass Dev Build and Push
 
 on:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 env:
-  GRASS_IMAGE_NAME: 'mrcolorrain/grass'
+  GRASS_IMAGE_NAME: 'qnistar/grass'
 
 jobs:
   dev-build-and-push:
@@ -52,4 +52,4 @@ jobs:
           cache-to: type=gha,mode=max
 
 
-*/          
+          
