@@ -20,7 +20,9 @@ env:
   GRASS_NODE_IMAGE_NAME: 'qnistar/grass-node'
   GRASS_DESKTOP_IMAGE_NAME: 'qnistar/grass-desktop'
   #TAG: 'latest'
-  TAG: '5.1.0'
+  #TAG: '5.1.0'
+  TAG: '4.32.0'
+  
   MAX_DELAY: 30
   GRASS_VERSION_FILE_PATH: '.githubworkflows.grass_current_version'
   GRASS_NODE_VERSION_FILE_PATH: '.githubworkflows.grass-node_current_version'
