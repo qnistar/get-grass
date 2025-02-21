@@ -2,8 +2,8 @@
     FROM debian:stable-slim AS grass-deb-patcher
 
     #ARG GRASS_VERSION="4.31.2"
-    #ARG GRASS_VERSION="4.32.0"
-    ARG GRASS_VERSION="5.1.0"
+    ARG GRASS_VERSION="4.32.0"
+    #ARG GRASS_VERSION="5.1.0"
 
     ARG GRASS_ARCH="amd64"
     ARG GRASS_PACKAGE_URL="https://files.getgrass.io/file/grass-extension-upgrades/ubuntu-22.04/Grass_${GRASS_VERSION}_${GRASS_ARCH}.deb"
