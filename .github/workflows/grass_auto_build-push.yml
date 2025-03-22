@@ -22,7 +22,8 @@ env:
   #TAG: 'latest'
   #TAG: '5.1.0'
   #TAG: '4.32.0'
-  TAG: '5.1.1'
+  #TAG: '5.1.1'
+  TAG: '5.2.2'
   
   MAX_DELAY: 30
   GRASS_VERSION_FILE_PATH: '.githubworkflows.grass_current_version'
