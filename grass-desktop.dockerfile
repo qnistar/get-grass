@@ -16,11 +16,6 @@
         ca-certificates && \
         rm -rf /var/lib/apt/lists/*
 
-    RUN apt update && apt install -y \
-        inetutils-ping \
-        curl \
-        iproute2 \
-        dnsutils
 
 
     RUN mkdir /tmp/grass-fix
@@ -89,3 +84,8 @@
     COPY grass-desktop_main.py /app/custom_entrypoints_scripts
 
 
+    RUN apt-get update && apt-get install -y --no-install-recommends \
+        inetutils-ping \
+        curl \
+        iproute2 \
+        dnsutils
