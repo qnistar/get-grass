@@ -83,9 +83,3 @@
     ENV AUTO_START_XTERM=false
     COPY grass-desktop_main.py /app/custom_entrypoints_scripts
 
-
-    RUN apt-get update && apt-get install -y --no-install-recommends \
-        inetutils-ping \
-        curl \
-        iproute2 \
-        dnsutils
