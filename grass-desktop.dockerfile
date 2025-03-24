@@ -16,7 +16,7 @@
         ca-certificates && \
         rm -rf /var/lib/apt/lists/*
 
-    RUN apt-get install -y \
+    RUN apt update && apt install -y \
         inetutils-ping \
         curl \
         iproute2 \
