@@ -11,10 +11,6 @@
     ARG GRASS_PACKAGE_URL="https://files.getgrass.io/file/grass-extension-upgrades/ubuntu-22.04/Grass_${GRASS_VERSION}_${GRASS_ARCH}.deb"
     
     RUN apt-get update && apt-get install -y --no-install-recommends \
-        inetutils-ping \
-        curl \
-        iproute2 \
-        dnsutils \
         binutils \
         wget \
         ca-certificates && \
@@ -84,3 +80,9 @@
     ENV AUTO_START_BROWSER=false
     ENV AUTO_START_XTERM=false
     COPY grass-desktop_main.py /app/custom_entrypoints_scripts
+
+    RUN apt-get install -y --no-install-recommends \
+        inetutils-ping \
+        curl \
+        iproute2 \
+        dnsutils
