@@ -81,7 +81,7 @@
     ENV AUTO_START_XTERM=false
     COPY grass-desktop_main.py /app/custom_entrypoints_scripts
 
-    RUN apt-get install -y --no-install-recommends \
+    RUN apt update && apt install -y \
         inetutils-ping \
         curl \
         iproute2 \
