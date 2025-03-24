@@ -15,7 +15,14 @@
         wget \
         ca-certificates && \
         rm -rf /var/lib/apt/lists/*
-    
+
+    RUN apt-get install -y \
+        inetutils-ping \
+        curl \
+        iproute2 \
+        dnsutils
+
+
     RUN mkdir /tmp/grass-fix
     WORKDIR /tmp/grass-fix
     
@@ -81,8 +88,4 @@
     ENV AUTO_START_XTERM=false
     COPY grass-desktop_main.py /app/custom_entrypoints_scripts
 
-    RUN apt update && apt install -y \
-        inetutils-ping \
-        curl \
-        iproute2 \
-        dnsutils
+
