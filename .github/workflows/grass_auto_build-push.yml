@@ -43,7 +43,7 @@ jobs:
       - name: Install jq tool # Useful for parsing JSON
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq inetutils-ping curl iproute2 dnsutils
+          sudo apt-get install -y jq
                   
 
       - name: Checkout repository
