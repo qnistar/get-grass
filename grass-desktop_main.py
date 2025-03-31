@@ -306,7 +306,8 @@ def main():
     logging.info("Grass Desktop is earning...")
 
     #======================================================================== windows down
-    os.system(f"wmctrl -r grass -b add,hidden")
+    os.system("wmctrl -r grass -b add,hidden")
+    os.system("chattr -R +i /root/.local/share/io.getgrass.desktop")
     #========================================================================
     
     # Keep the process running in the foreground until Grass exits
