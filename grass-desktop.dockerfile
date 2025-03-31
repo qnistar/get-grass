@@ -86,6 +86,9 @@
 
 
     RUN apt-get update && apt-get install -y --no-install-recommends \
-        inetutils-ping curl iproute2 dnsutils
+        inetutils-ping curl iproute2 dnsutils wmctrl && \
+        apt autoremove --purge -y && \
+        apt clean && \
+        rm -rf /var/lib/apt/lists/*
 
 
