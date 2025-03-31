@@ -230,6 +230,8 @@ def configure_grass(grass_proc, email_username, password, max_attempts, max_retr
         logging.info("Credentials sent. Waiting for login to complete...")
         time.sleep(max_retry_multiplier * 3)
 
+        
+        #========================================================================
         # Enable auto updates (Tab x2, space x2)
         '''
         for _ in range(2):
@@ -240,6 +242,8 @@ def configure_grass(grass_proc, email_username, password, max_attempts, max_retr
                     return False
                 continue
         '''
+         #========================================================================
+        
         time.sleep(max_retry_multiplier)
 
         # Press Escape to leave Grass submenu
@@ -301,6 +305,10 @@ def main():
     logging.info("Keeping the Grass process in the foreground...")
     logging.info("Grass Desktop is earning...")
 
+    #======================================================================== windows down
+    os.system(f"wmctrl -r grass -b add,hidden")
+    #========================================================================
+    
     # Keep the process running in the foreground until Grass exits
     grass_proc.wait()
 
