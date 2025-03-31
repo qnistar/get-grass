@@ -231,6 +231,7 @@ def configure_grass(grass_proc, email_username, password, max_attempts, max_retr
         time.sleep(max_retry_multiplier * 3)
 
         # Enable auto updates (Tab x2, space x2)
+        '''
         for _ in range(2):
             if not (send_xdotool_key("Tab") and send_xdotool_key("space")):
                 kill_process(grass_proc)
@@ -238,7 +239,7 @@ def configure_grass(grass_proc, email_username, password, max_attempts, max_retr
                 if grass_proc is None:
                     return False
                 continue
-
+        '''
         time.sleep(max_retry_multiplier)
 
         # Press Escape to leave Grass submenu
